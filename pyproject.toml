@@ -26,6 +26,8 @@ dependencies = [
     "discovery",
     "quickcw",
     "zuko",
+    "ptarcade>=1.1.5",
+    "ceffyl",
 ]
 
 [tool.uv.sources]
@@ -41,6 +43,8 @@ quickcw = { git = "https://github.com/nanograv/quickcw" }
 # wheels aren't published on the CPU index (and are already CPU/MPS-only on
 # PyPI), so Darwin keeps using the default index.
 torch = [{ index = "pytorch-cpu", marker = "platform_system != 'Darwin'" }]
+ceffyl = { git = "https://github.com/astrolamb/ceffyl.git", rev = "ad5fda4c9b18555d218d9ee5b0e6116c9a79ade8" }
+ptarcade = { git = "https://github.com/andrea-mitridate/PTArcade.git", branch = "dev" }
 
 [[tool.uv.index]]
 name = "pytorch-cpu"
