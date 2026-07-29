@@ -28,6 +28,10 @@ dependencies = [
     "zuko",
     "ptarcade>=1.1.5",
     "ceffyl",
+    "joblib",
+    "natsort",
+    "tqdm_joblib",
+    "pandora",
 ]
 
 [tool.uv.sources]
@@ -36,6 +40,7 @@ holodeck-gw = { git = "https://github.com/nanograv/holodeck", branch = "dev" }
 jug-timing = { git = "https://github.com/MattTMiles/jug.git", branch = "test_dep" }
 discovery = { git = "https://github.com/nanograv/discovery" }
 quickcw = { git = "https://github.com/nanograv/quickcw" }
+pandora = {git = "https://github.com/NimaLaal/pandora.git"}
 # zuko is a published PyPI package (normalizing flows, needs PyTorch) — no git source needed.
 
 # Force CPU-only PyTorch. On Linux/Windows the default PyPI torch wheel bundles
